@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "aiohttp-observability"
+version = "0.0.0"
+description = "An observability toolkit for aiohttp that provides convenience tools for popular aggregators and monitoring use-cases."
+authors = ["Casey Howard <casey.p.howard@outlook.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "aiohttp_observability"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^6.0.0"
+pytest-mock = "*"
+pre-commit = "^2.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
